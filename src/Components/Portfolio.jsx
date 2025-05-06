@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/milkyway.jpg";
+import image from "../Assets/images/milkyway.jpg";
 
 const imageAltText = "view of the milk way galaxy";
 
@@ -32,8 +32,7 @@ const imageAltText = "view of the milk way galaxy";
 const projectList = [
   {
     title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+    description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
     url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
   },
   {
@@ -57,35 +56,20 @@ const projectList = [
 ];
 
 const Portfolio = () => {
-  // Define text styling
-  const textStyle = {
-    color: "#333333", // Dark grey
-    textDecoration: "none"
-  };
-  
-  const hoverStyle = {
-    color: "#000000", // Darker on hover
-    transition: "color 0.3s ease"
-  };
-    
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center", color: "#333333", margin: 0, padding: "1rem 0", width: "100%" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
+      <h2>Portfolio</h2>
+      <div className="portfolio-container">
+        <div className="portfolio-image">
+          <img src={image} alt={imageAltText} />
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title} style={{ border: "2px solid rgba(211, 120, 67, 0.9)", borderWidth: "2px"}}>
+            <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px", color: "#333333" }}>{project.title}</h3>
+                <h3>{project.title}</h3>
               </a>
-              <p className="small" style={{ color: "#333333", fontweight: 500, marginTop: "0.5rem" }}>{project.description}</p>
+              <p className="small">{project.description}</p>
             </div>
           ))}
         </div>

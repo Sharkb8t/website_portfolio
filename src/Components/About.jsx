@@ -16,38 +16,11 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/gradient-background.jpg";
+import image from "../Assets/images/gradient-background.jpg";
 
-const imageAltText = "yellow to pink gradient background";
+const imageAltText = "Pink and Orange textured paint canvas - Pawel Czerwinski";
 
-/**
- * Sort description that expands on your title on the Home component.
- */
-const description =
-  "I'm a Data Analyst who studied Marine Science originally. I'm always looking to solve the mysteries of the world around me.";
-
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
-const skillsList = [
-  "Data Analysis & Visualization",
-  "Python & R Languages/Libraries",
-  "SQL & Power BI",
-  "JavaScript & Web Development",
-  "Neural Networks",
-  "Machine Learning & AI",
-];
-
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
-const detailOrQuote =
-  "My passion for understanding the world has motivated me to pursuing a career in Data Analytics. I am always eager to learn, and am always looking for new challenges. I believe that data has the power to change the world, and I am excited to be a part of that change.";
-
-const About = () => {
+const About = ({ description, skillsList, detailOrQuote }) => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />

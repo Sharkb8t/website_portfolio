@@ -1,21 +1,32 @@
 /**
+/**
 * CSS file to hold styles that apply across the application
 */
-
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
 :root {
+/* Color Variables */
   --primary-accent: rgba(211, 120, 67, 0.75);
   --primary-solid: rgb(211, 120, 67);
   --secondary-color: #a9a9a9;
   --text-light: #ffffff;
   --text-dark: #43403c;
   --section-padding: 5rem 0;
+
+/* Spacing Variables */
+  --section-padding: 5rem 0;
+  --container-padding: 0 20px;
+  --box-padding: 24px 16px;
+
+/* Typography Variables */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
 }
 
+/* Base Styles */
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-sans);
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -23,39 +34,15 @@ body {
   width: 100%;
 }
 
-div#main {
+#main {
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
 
-section {
-  position: relative;
-  width: 100vw;
-}
-
-section.min-height {
-  min-height: 100vh;
-}
-
-section.padding {
-  padding: var(--section-padding);
-}
-
-section img.background {
-  height: 100%;
-  left: 50%;
-  object-fit: cover;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, 0);
-  width: 100vmax;
-  z-index: -1;
-}
-
+/* Typography Styles */
 h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-serif);
   font-size: 7rem;
   font-weight: 400;
   line-height: 0.8;
@@ -88,63 +75,42 @@ p.large {
 
 p.small {
   font-size: 15px;
+  font-weight: 500; /* Bold for project descriptions */
 }
 
-hr {
-  margin: 2.5rem;
+/* Layout Components */
+section {
+  position: relative;
+  width: 100vw;
 }
 
-li {
-  line-height: 1.7;
+.min-height {
+  min-height: 100vh;
 }
 
-li::marker {
-  color: rgba(211, 120, 67, 0.75);
+.padding {
+  padding: var(--section-padding);
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.background {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100vmax;
+  z-index: -1;
 }
 
-a:hover {
-  color: #3c4340;
-}
-
-.container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* More responsive */
-  margin: 20px auto;
-  padding: 0 20px; /* Padding for mobile format*/
-  width: 100%;
-  max-width: 1200px;
-}
-
-.container .box {
-  border-radius: 10px;
-  border: 1px solid var(--primary-accent); /* Using variable */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px 16px;
-  text-align: center;
-  transition: all 0.3s ease; /* Added transition */
-}
-
-.container .box:hover {
-  transform: translateY(-5px); /* Added hover effect */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-
-
+/* Header */
 header {
   position: fixed;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background: var(--primary-accent); /* Using variable */
+  background: var(--primary-accent);
   padding: 1rem;
   top: 0;
   width: 100%;
@@ -152,16 +118,127 @@ header {
 }
 
 header a {
-  color: var(--text-light); /* Using variable */
+  color: var(--text-light);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 header a:hover {
-  color: var(--text-dark); /* Using variable */
+  color: var(--text-dark);
 }
 
-img.socialIcon {
+/* Home Components */
+.home-content {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  width: 17rem;
+  color: var(--text-light);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator img {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* About Component */
+.about-card {
+  background: white;
+  width: 50%;
+  padding: 4rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.skills-grid {
+  text-align: left;
+  columns: 2;
+  font-size: 1.25rem;
+  margin: 2rem 3rem;
+  gap: 3rem;
+}
+
+/* Footer Component */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.copyright {
+  margin-top: 0;
+  font-weight: 500;
+  color: var(--text-dark-grey);
+}
+
+/* Portfolio Components */
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 20px auto;
+  padding: var(--container-padding);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.box {
+  border-radius: 10px;
+  border: 2px solid var(--primary-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--box-padding);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box h3,
+.box p {
+  color: var(--text-dark-grey);
+}
+
+/* Footer Components */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 5rem 0 3rem;
+  background: var(--primary-accent);
+  width: 100vw;
+}
+
+#footer p {
+  color: var(--text-dark-grey);
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

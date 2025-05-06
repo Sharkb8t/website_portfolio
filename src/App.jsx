@@ -14,6 +14,9 @@ import Portfolio from "./Components/Portfolio";
 
 import "./styles.css";
 
+const primaryColor = "rgba(211, 120, 67, 0.75)";
+const secondaryColor = "rgba(95, 64, 46, 0.8)";
+
 /**
  * This object represents your information. The project is set so that you
  * only need to update these here, and values are passed a properties to the
@@ -23,31 +26,48 @@ import "./styles.css";
  *
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
-const siteProps = {
-  name: "Dalton Schmidt",
-  title: "Data Analyst & Machine Learning Engineer",
-  email: "daltonaschmidt@gmail.com",
-  gitHub: "Sharkb8t",
-  kaggle: "daltonschmidt",
-  instagram: "",
-  bluesky: "daltonaschmidt",
-  linkedIn: "dalton-a-schmidt",
-  medium: "",
-  youTube: "@DaltonASchmidt",
-  microsoft: "",
-};
-
-const primaryColor = "rgba(211, 120, 67, 0.75)";
-const secondaryColor = "#a9a9a9";
 
 const App = () => {
+  const siteData = {
+    name: "Dalton Schmidt",
+    title: "Data Analyst & Machine Learning Engineer",
+    description: "I'm a Data Analyst who studied Marine Science originally...",
+    skills: [
+      "Data Analysis & Visualization",
+      "Python & R Languages/Libraries",
+      "SQL & Power BI",
+      "JavaScript & Web Development",
+      "Neural Networks",
+      "Machine Learning & AI",
+    ],
+    socialLinks: {
+      email: "daltonaschmidt@gmail.com",
+      gitHub: "https://github.com/Sharkb8t",
+      linkedIn: "https://linkedin.com/in/dalton-a-schmidt",
+      kaggle: "https://www.kaggle.com/daltonschmidt",
+      bluesky: "https://bsky.app/profile/daltonaschmidt.bsky.social",
+      instagram: "",
+      medium: "",
+      youTube: "https://www.youtube.com/@DaltonASchmidt",
+      microsoft: "",
+      twitter: "",
+    }
+  };
+  
   return (
     <div id="main">
       <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
+      <Home name={siteData.name} title={siteData.title} />
+      <About 
+        description={siteData.description}
+        skillsList={siteData.skills}
+        detailOrQuote="'The mystery of life isn't a problem to solve, but a reality to experience.' - Frank Herbert (God Emperor of Dune)"
+      />
       <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Footer 
+        socialLinks={siteData.socialLinks} 
+        name={siteData.name} 
+      />
     </div>
   );
 };
