@@ -1,0 +1,167 @@
+/**
+* CSS file to hold styles that apply across the application
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+
+:root {
+  --primary-accent: rgba(211, 120, 67, 0.75);
+  --primary-solid: rgb(211, 120, 67);
+  --secondary-color: #a9a9a9;
+  --text-light: #ffffff;
+  --text-dark: #43403c;
+  --section-padding: 5rem 0;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+div#main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+}
+
+section.min-height {
+  min-height: 100vh;
+}
+
+section.padding {
+  padding: var(--section-padding);
+}
+
+section img.background {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100vmax;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+p.large {
+  font-size: 24px;
+}
+
+p.small {
+  font-size: 15px;
+}
+
+hr {
+  margin: 2.5rem;
+}
+
+li {
+  line-height: 1.7;
+}
+
+li::marker {
+  color: rgba(211, 120, 67, 0.75);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3c4340;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* More responsive */
+  margin: 20px auto;
+  padding: 0 20px; /* Padding for mobile format*/
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container .box {
+  border-radius: 10px;
+  border: 1px solid var(--primary-accent); /* Using variable */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  text-align: center;
+  transition: all 0.3s ease; /* Added transition */
+}
+
+.container .box:hover {
+  transform: translateY(-5px); /* Added hover effect */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--primary-accent); /* Using variable */
+  padding: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header a {
+  color: var(--text-light); /* Using variable */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--text-dark); /* Using variable */
+}
+
+img.socialIcon {
+  height: 30px;
+  width: 30px;
+}
