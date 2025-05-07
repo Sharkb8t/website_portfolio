@@ -240,6 +240,12 @@ header a:hover {
 .socialIcon {
   height: 30px;
   width: 30px;
+  border: 1px solid red;
+}
+
+.social-links {
+  background: rgba(0,0,0,0.1); /* Debug container */
+  padding: 10px;
 }
 
 /* Responsive Adjustments */

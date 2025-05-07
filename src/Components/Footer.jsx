@@ -10,25 +10,34 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import socialIcons from "../Assets/socialIcons.js";
+import socialIcons from "../Assets/socialIcons";
 
 const Footer = ({ socialLinks, name }) => {
   return (
     <footer id="footer">
       <div className="social-links">
-        {Object.entries(socialLinks).map(([key, value]) => (
-          value && (
+        {Object.entries(socialLinks).map(([platform, url]) => {
+          if (!url || !socialIcons[platform]) return null;
+          
+          return (
             <a
-              key={key}
-              href={value.url || `mailto:${value}`}
+              key={platform}
+              href={platform === 'email' ? `mailto:${url}` : url}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={key}
+              aria-label={platform}
             >
-              <img src={socialIcons[key]} alt={key} />
+              <img 
+                src={socialIcons[platform]} 
+                alt={`${platform} icon`}
+                className="social-icon"
+                onError={(e) => {
+                  e.target.style.display = 'none'; // Hide broken icons
+                }}
+              />
             </a>
-          )
-        ))}
+          );
+        })}
       </div>
       <p className="copyright">Created by {name}</p>
     </footer>
