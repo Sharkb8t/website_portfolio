@@ -164,19 +164,6 @@ header a:hover {
   gap: 3rem;
 }
 
-/* Footer Component */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.copyright {
-  margin-top: 0;
-  font-weight: 500;
-  color: var(--text-dark-grey);
-}
-
 /* Portfolio Components */
 .portfolio-container {
   grid-gap: 20px;
@@ -244,8 +231,15 @@ header a:hover {
 }
 
 .social-links {
-  background: rgba(0,0,0,0.1); /* Debug container */
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.copyright {
+  margin-top: 0;
+  font-weight: 500;
+  color: var(--text-dark-grey);
 }
 
 /* Responsive Adjustments */
