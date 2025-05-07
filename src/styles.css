@@ -195,7 +195,7 @@ header a:hover {
 .portfolio-image img {
   width: 100%;
   height: auto;
-  onject-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
