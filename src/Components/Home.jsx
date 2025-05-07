@@ -29,8 +29,10 @@ const Home = ({ name, title }) => {
     <section id="home" className="min-height">
       <img className="background" src={image} alt={imageAltText} />
       <div className="home-content">
-        <h1>{name}</h1>
-        <h2>{title}</h2>
+        <div className="name-title-wrapper">
+          <h1>{name}</h1>
+          <h2>{title}</h2>
+        </div>
       </div>
       <div className="scroll-indicator">
         <img src={arrowSvg} alt="Scroll down indicator" />
