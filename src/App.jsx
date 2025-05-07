@@ -30,7 +30,7 @@ const secondaryColor = "rgba(95, 64, 46, 0.8)";
 const App = () => {
   const siteData = {
     name: "Dalton Schmidt",
-    title: "Data Analyst & Machine Learning Engineer",
+    title: "Data Scientist & Machine Learning Engineer",
     description: "I'm a Data Analyst who originally studied Marine Science. My passion for understanding the world has motivated me to pursuing a career in Data Analytics. I am always eager to learn, and am always looking for new challenges. I believe that data has the power to change the world, and I am excited to be a part of that change.",
     skills: [
       "Data Analysis & Visualization",
