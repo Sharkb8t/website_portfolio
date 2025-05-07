@@ -10,8 +10,11 @@ const Header = () => {
   return (
     <header>
       <a href="#home">Home</a>
+      <span className="nav-divider"></span>
       <a href="#about">About</a>
+      <span className="nav-divider"></span>
       <a href="#portfolio">Portfolio</a>
+      <span className="nav-divider"></span>
       <a href="#footer">Contact</a>
     </header>
   );
