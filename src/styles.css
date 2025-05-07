@@ -11,7 +11,6 @@
   --secondary-color: #a9a9a9;
   --text-light: #ffffff;
   --text-dark: #43403c;
-  --section-padding: 5rem 0;
 
 /* Spacing Variables */
   --section-padding: 5rem 0;
@@ -179,14 +178,25 @@ header a:hover {
 }
 
 /* Portfolio Components */
-.container {
-  display: grid;
+.portfolio-container {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 20px auto;
   padding: var(--container-padding);
   width: 100%;
   max-width: 1200px;
+}
+
+.portfolio-image {
+  max-width: 40%;
+  align-self: center;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  onject-fit: cover;
+  border-radius: 10px;
 }
 
 .box {

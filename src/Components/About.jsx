@@ -26,7 +26,7 @@ const About = ({ description, skillsList, detailOrQuote }) => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgba(255, 245, 227, 0.8)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
