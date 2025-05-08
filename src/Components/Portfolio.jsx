@@ -9,6 +9,7 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * Desk image
@@ -23,59 +24,56 @@ import image from "../Assets/images/milkyway.jpg";
 
 const imageAltText = "view of the milk way galaxy";
 
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
-const projectList = [
-  {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
-  },
-  {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
-  },
-  {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
-  },
-];
-
-const Portfolio = () => {
+const Portfolio = ({ projects }) => {
   return (
     <section className="padding" id="portfolio">
       <h2>Portfolio</h2>
       <div className="portfolio-container">
         <div className="portfolio-image">
-          <img src={image} alt={imageAltText} />
+          <img 
+            src={image} 
+            alt={imageAltText}
+            loading="lazy"
+            style={{ 
+              width: '100%',
+              height: 'auto',
+              objectPosition: 'center center'
+            }}
+          />
+          <p className="small" style={{ textAlign: 'center', marginTop: '1rem' }}>
+            {imageAltText}
+          </p>
         </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
+        <div className="portfolio-projects">
+          {projects.map((project) => (
+            <article className="project-card box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={`${project.title} screenshot`}
+                    loading="lazy"
+                    className="project-thumbnail"
+                  />
+                )}
                 <h3>{project.title}</h3>
+                <p className="small">{project.description}</p>
+                {project.skills && (
+                  <div className="project-skills">
+                    {project.skills.join(" • ")}
+                  </div>
+                )}
               </a>
-              <p className="small">{project.description}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
     </section>
   );
+};
+
+Portfolio.propTypes = {
+  projects: PropTypes.array.isRequired,
 };
 
 export default Portfolio;

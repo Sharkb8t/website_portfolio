@@ -281,17 +281,24 @@ header a:hover + .nav-divider,
 
 /* Portfolio Components */
 .portfolio-container {
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 20px auto;
-  padding: var(--container-padding);
-  width: 100%;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: calc(100% - 4rem);
+}
+
+.portfolio-container .container {
+  display: contents;
 }
 
 .portfolio-image {
-  max-width: 40%;
-  align-self: center;
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .portfolio-image img {
@@ -299,9 +306,38 @@ header a:hover + .nav-divider,
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+  min-height: 400px;
+}
+
+.portfolio-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-skills {
+  padding: 0.5rem;
+  background: rgba(211, 120, 67, 0.1);
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 .box {
+  width: 100%;
   border-radius: 10px;
   border: 2px solid var(--primary-accent);
   display: flex;
@@ -310,6 +346,8 @@ header a:hover + .nav-divider,
   padding: var(--box-padding);
   text-align: center;
   transition: all 0.3s ease;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .box:hover {
@@ -403,5 +441,41 @@ header a:hover + .nav-divider,
     text-shadow: 
       0.5px 0.5px 0 #312314a1,
       -0.5px -0.5px 0 #312314a1;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .portfolio-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-image img {
+    min-height: 300px;
+  }
+
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-container {
+    grid-template-columns: 1.2fr 2fr; /* More space for image */
+  }
+  
+  .portfolio-image img {
+    min-height: 500px;
   }
 }

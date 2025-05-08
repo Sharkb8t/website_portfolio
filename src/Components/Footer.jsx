@@ -17,6 +17,9 @@ const Footer = ({ socialLinks, name }) => {
     <footer id="footer">
       <div className="social-links">
         {Object.entries(socialLinks).map(([platform, url]) => {
+          const iconKey = platform === 'email' ? 'email' : platform;
+
+
           if (!url || !socialIcons[platform]) return null;
           
           return (
