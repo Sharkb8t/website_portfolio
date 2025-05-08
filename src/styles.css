@@ -312,7 +312,7 @@ header a:hover + .nav-divider,
 .portfolio-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 2.5rem;
   justify-items: center;
 }
 
@@ -343,7 +343,7 @@ header a:hover + .nav-divider,
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--box-padding);
+  padding: 2rem 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
   max-width: 400px;
@@ -406,6 +406,7 @@ header a:hover + .nav-divider,
 }
 
 /* Responsive Adjustments */
+
 @media (max-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -461,18 +462,34 @@ header a:hover + .nav-divider,
   .portfolio-projects {
     grid-template-columns: 1fr;
     width: 100%;
+    gap: 1.2rem;
   }
 
   .box {
     width: 100%;
     max-width: none;
     margin: 0;
+    padding: 1.5rem 1rem;
   }
 }
 
+@media (min-width: 769px) and (max-width: 1199px) {
+  .portfolio-projects {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+
+
 @media (min-width: 1200px) {
+  .portfolio-projects {
+    gap: 3rem;
+  }
+
   .portfolio-container {
-    grid-template-columns: 1.2fr 2fr; /* More space for image */
+    grid-template-columns: 1.2fr 2fr;
+    gap: 3rem;
   }
   
   .portfolio-image img {
