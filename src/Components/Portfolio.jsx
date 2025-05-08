@@ -22,7 +22,7 @@ import PropTypes from "prop-types";
  */
 import image from "../Assets/images/milkyway.jpg";
 
-const imageAltText = "view of the milk way galaxy";
+const imageAltText = "Photography of the California Nebula - Steve Busch (Unsplash)";
 
 const Portfolio = ({ projects }) => {
   return (

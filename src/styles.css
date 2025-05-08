@@ -311,7 +311,7 @@ header a:hover + .nav-divider,
 
 .portfolio-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.5rem;
   justify-items: center;
 }
@@ -323,17 +323,17 @@ header a:hover + .nav-divider,
 
 .project-thumbnail {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
 
 .project-skills {
-  padding: 0.5rem;
+  padding: 0.4rem;
   background: rgba(211, 120, 67, 0.1);
   border-radius: 4px;
-  margin-top: 1rem;
-  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .box {
@@ -343,10 +343,10 @@ header a:hover + .nav-divider,
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   text-align: center;
   transition: all 0.3s ease;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -465,11 +465,15 @@ header a:hover + .nav-divider,
     gap: 1.2rem;
   }
 
+  .project-thumbnail {
+    height: 150px;
+  }
+
   .box {
     width: 100%;
     max-width: none;
     margin: 0;
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.8rem;
   }
 }
 
