@@ -282,6 +282,14 @@ header a:hover + .nav-divider,
 }
 
 /* Portfolio Components */
+#portfolio h2 {
+  font-family: var(--font-sans);
+  font-size: 3rem;
+  color: var(--text-medium-grey);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .portfolio-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -301,6 +309,13 @@ header a:hover + .nav-divider,
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.portfolio-image p.small {
+  color: var(--text-medium-grey);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 .portfolio-image img {
@@ -353,14 +368,29 @@ header a:hover + .nav-divider,
   margin: 0 auto;
 }
 
+.box a {
+  text-decoration: none;
+}
+
+.box a:hover {
+  text-decoration: none;
+}
+
+.box h3 {
+  transition: color 0.3s ease;
+}
+
+.box p {
+  color: var(--text-medium-grey);
+}
+
 .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.box h3,
-.box p {
-  color: var(--text-medium-grey);
+.box:hover h3 {
+  color: var(--primary-solid);
 }
 
 /* Footer Components */
