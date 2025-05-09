@@ -271,6 +271,25 @@ header a:hover + .nav-divider,
   padding: 4rem;
   margin: 3rem auto;
   text-align: center;
+  color: var(--text-dark); /* Use existing dark grey variable */
+}
+
+#about-card h2 {
+  font-family: var(--font-sans);
+  font-size: 3rem;
+  color: var(--text-dark-grey);
+  text-align: center;
+  text-shadow: 
+    0 0 1px rgba(211, 120, 67, 0.75),
+    0 0 1px rgba(211, 120, 67, 0.75),
+    0 0 1px rgba(211, 120, 67, 0.75),
+    0 0 1px rgba(211, 120, 67, 0.75);
+}
+
+.about-card .large {
+  font-weight: 600;
+  color: var(--text-dark-grey);
+  line-height: 1.6;
 }
 
 .skills-grid {
@@ -279,6 +298,12 @@ header a:hover + .nav-divider,
   font-size: 1.25rem;
   margin: 2rem 3rem;
   gap: 3rem;
+  color: var(--text-dark-grey);
+}
+
+.skills-grid li {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
 /* Portfolio Components */

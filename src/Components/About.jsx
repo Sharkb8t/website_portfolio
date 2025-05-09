@@ -26,7 +26,7 @@ const About = ({ description, skillsList, detailOrQuote }) => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "rgba(255, 245, 227, 0.8)",
+          backgroundColor: "rgba(255, 237, 204, 0.75)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
@@ -43,6 +43,7 @@ const About = ({ description, skillsList, detailOrQuote }) => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            fontcolor: "#808080",
           }}
         >
           {skillsList.map((skill) => (
