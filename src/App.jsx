@@ -45,7 +45,7 @@ const App = () => {
         title: "Heat Hypothesis: A Data Science Case Study",
         description: "Utilized New York City crime data to analyze the relationship between temperature and crime rates.",
         url: "https://github.com/Sharkb8t/Heat_Hypothesis_Case_Study_NY",
-        image: "",
+        image: "../Assets/images/orange-thermostat.jpg",
         skills: ["JavaScript", "Python", "SQL", "Jupyter Notebook","Leaflet"],
       },
       {
@@ -56,10 +56,11 @@ const App = () => {
         skills: ["Python", "Jupyter Notebook", "Tableu", "MLM"],
       },
       {
-        title: "My Resume Site",
-        description:
-          "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-        url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+        title: "Crypto Clustering: Is it a Good Investment?",
+        description: "Utilized unsupervised machine learning techniques to analyze cryptocurrency market data. Using K-Means clustering, I grouped cryptocurrencies based on their 24-hour and 7-day price changes.",
+        url: "https://github.com/Sharkb8t/CryptoClustering",
+        image: "",
+        skills: ["Python", "Jupyter Notebook", "Unsupervised Learning", "PCA", "K-Means"],
       },
       {
         title: "GitHub Codespaces and github.dev",

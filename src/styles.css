@@ -271,6 +271,8 @@ header a:hover + .nav-divider,
   padding: 4rem;
   margin: 3rem auto;
   text-align: center;
+  font-weight: 500;
+  color: #808080;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -288,13 +290,14 @@ header a:hover + .nav-divider,
 }
 
 .about-card .large {
-  font-weight: 600;
+  font-weight: 400;
   color: #808080;
   line-height: 1.6;
 }
 
 .skills-grid {
   text-align: left;
+  font-weight: 300;
   columns: 2;
   font-size: 1.25rem;
   margin: 2rem 3rem;
