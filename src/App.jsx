@@ -42,15 +42,18 @@ const App = () => {
     ],
     projects: [
       {
-        title: "10 Things To Know About Azure Static Web Apps 🎉",
-        description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-        url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+        title: "Heat Hypothesis: A Data Science Case Study",
+        description: "Utilized New York City crime data to analyze the relationship between temperature and crime rates.",
+        url: "https://github.com/Sharkb8t/Heat_Hypothesis_Case_Study_NY",
+        image: "",
+        skills: ["JavaScript", "Python", "SQL", "Jupyter Notebook","Leaflet"],
       },
       {
-        title: "Web Development for Beginners",
-        description:
-          "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-        url: "https://github.com/microsoft/web-dev-for-beginners",
+        title: "Credit Risk Analysis",
+        description: "Utilized bank records to train and test a machine learning model to predict credit risk for future loan applicants.",
+        url: "https://github.com/Sharkb8t/Credit_Risk_Analysis_MLM",
+        image: "",
+        skills: ["Python", "Jupyter Notebook", "Tableu", "MLM"],
       },
       {
         title: "My Resume Site",

@@ -24,7 +24,7 @@ const About = ({ description, skillsList, detailOrQuote }) => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div
+      <div className="about-card"
         style={{
           backgroundColor: "rgba(255, 237, 204, 0.75)",
           width: "50%",

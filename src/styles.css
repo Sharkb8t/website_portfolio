@@ -271,13 +271,13 @@ header a:hover + .nav-divider,
   padding: 4rem;
   margin: 3rem auto;
   text-align: center;
-  color: var(--text-dark); /* Use existing dark grey variable */
+  color: #808080;
 }
 
 #about-card h2 {
   font-family: var(--font-sans);
   font-size: 3rem;
-  color: var(--text-dark-grey);
+  color: #808080;
   text-align: center;
   text-shadow: 
     0 0 1px rgba(211, 120, 67, 0.75),
@@ -288,7 +288,7 @@ header a:hover + .nav-divider,
 
 .about-card .large {
   font-weight: 600;
-  color: var(--text-dark-grey);
+  color: #808080;
   line-height: 1.6;
 }
 
@@ -298,7 +298,7 @@ header a:hover + .nav-divider,
   font-size: 1.25rem;
   margin: 2rem 3rem;
   gap: 3rem;
-  color: var(--text-dark-grey);
+  color: #808080;
 }
 
 .skills-grid li {
