@@ -378,6 +378,7 @@ header a:hover + .nav-divider,
 
 .box h3 {
   transition: color 0.3s ease;
+  color: var(--text-medium-grey);
 }
 
 .box p {
