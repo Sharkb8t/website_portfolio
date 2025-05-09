@@ -59,7 +59,7 @@ const App = () => {
         title: "Crypto Clustering: Is it a Good Investment?",
         description: "Utilized unsupervised machine learning techniques to analyze cryptocurrency market data. Using K-Means clustering, I grouped cryptocurrencies based on their 24-hour and 7-day price changes.",
         url: "https://github.com/Sharkb8t/CryptoClustering",
-        image: "",
+        image: "../Assets/images/crypto-track.jpg",
         skills: ["Python", "Jupyter Notebook", "Unsupervised Learning", "PCA", "K-Means"],
       },
       {
