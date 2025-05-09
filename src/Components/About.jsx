@@ -36,14 +36,12 @@ const About = ({ description, skillsList, detailOrQuote }) => {
         <h2>About Myself</h2>
         <p className="large">{description}</p>
         <hr />
-        <ul
-          style={{
+        <ul className="skills-grid" style={{
             textAlign: "left",
             columns: 2,
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
-            fontcolor: "#808080",
           }}
         >
           {skillsList.map((skill) => (

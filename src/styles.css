@@ -323,10 +323,9 @@ header a:hover + .nav-divider,
   position: absolute;
   left: 0;
   top: 0.55em;
-  width: 0.5em;
-  height: 0.5em;
-  background-color: var(--text-dark);
-  margin-right: 0;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: rgba(211, 120, 67, 0.75);
   transform: rotate(45deg);
 }
 
