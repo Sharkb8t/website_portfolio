@@ -296,6 +296,7 @@ header a:hover + .nav-divider,
 }
 
 .skills-grid {
+  list-style: none;
   text-align: left;
   font-weight: 300;
   columns: 2;
@@ -303,11 +304,31 @@ header a:hover + .nav-divider,
   margin: 2rem 3rem;
   gap: 3rem;
   color: #808080;
+  padding-left: 0;
 }
 
 .skills-grid li {
   font-weight: 600;
   margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  min-height: 1.8em;
+}
+
+.skills-grid li::before {
+  content: "";
+  color: rgba(211, 120, 67, 0.75);
+  font-size: 0.7em;
+  position: absolute;
+  left: 0;
+  background-color: rgba(211, 120, 67, 0.75);
+  top: 0.15em;
+  position: static;
+  margin-right: 0.8rem;
+  transform: rotate(45deg);
 }
 
 /* Portfolio Components */
