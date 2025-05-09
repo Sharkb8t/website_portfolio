@@ -308,7 +308,6 @@ header a:hover + .nav-divider,
 }
 
 .skills-grid li {
-  content: "◆";
   font-weight: 500;
   margin-bottom: 0.8rem;
   position: relative;
@@ -320,15 +319,14 @@ header a:hover + .nav-divider,
 }
 
 .skills-grid li::before {
-  content: "";
-  color: rgba(211, 120, 67, 0.75);
-  font-size: 0.7em;
+  content: '';
   position: absolute;
   left: 0;
-  background-color: rgba(211, 120, 67, 0.75);
-  top: 0.15em;
-  position: static;
-  margin-right: 0.8rem;
+  top: 0.55em;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--text-dark);
+  margin-right: 0;
   transform: rotate(45deg);
 }
 
