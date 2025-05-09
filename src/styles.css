@@ -512,6 +512,12 @@ header a:hover + .nav-divider,
       -0.5px -0.5px 0 #312314a1;
   }
 
+  .about-card {
+    border-radius: 8px;
+    width: 90%;
+    padding: 2rem;
+  }
+
   .portfolio-container {
     grid-template-columns: 1fr;
     padding: 0 1rem;
