@@ -10,7 +10,9 @@
   --primary-solid: rgb(211, 120, 67);
   --secondary-color: #a9a9a9;
   --text-light: #ffffff;
+  --text-light-grey: #d3d3d3;
   --text-dark: #43403c;
+  --text-medium-grey: #808080;
 
 /* Spacing Variables */
   --section-padding: 5rem 0;
@@ -103,7 +105,7 @@ section {
   z-index: -1;
 }
 
-/* Header */
+/* Header Components */
 header {
   position: fixed;
   display: flex;
@@ -330,6 +332,7 @@ header a:hover + .nav-divider,
 
 .project-skills {
   padding: 0.4rem;
+  color: var(--text-medium-grey);
   background: rgba(211, 120, 67, 0.1);
   border-radius: 4px;
   margin-top: 0.8rem;
@@ -357,7 +360,7 @@ header a:hover + .nav-divider,
 
 .box h3,
 .box p {
-  color: var(--text-dark-grey);
+  color: var(--text-medium-grey);
 }
 
 /* Footer Components */
@@ -372,7 +375,7 @@ header a:hover + .nav-divider,
 }
 
 #footer p {
-  color: var(--text-dark-grey);
+  color: var(--text-light-grey);
   font-weight: 500;
   margin-top: 0;
 }
@@ -402,7 +405,7 @@ header a:hover + .nav-divider,
 .copyright {
   margin-top: 0;
   font-weight: 500;
-  color: var(--text-dark-grey);
+  color: var(--text-light-grey);
 }
 
 /* Responsive Adjustments */
