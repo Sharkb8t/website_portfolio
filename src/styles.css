@@ -215,22 +215,23 @@ header a:hover + .nav-divider,
   margin-bottom: 0.5rem;
   color: var(--text-light);
   text-shadow: 
-    0 0 4px #312314a1,
-    0 0 4px #312314a1,
-    0 0 4px #312314a1,
-    0 0 4px #312314a1;
+    0 0 4px rgba(211, 120, 67, 0.75),
+    0 0 4px rgba(211, 120, 67, 0.75),
+    0 0 4px rgba(211, 120, 67, 0.75),
+    0 0 4px rgba(211, 120, 67, 0.75);
 }
 
 .home-content h2 {
+  font-family: var(--font-sans);
   font-size: 2rem;
   font-weight: 400;
   margin-top: 0;
   color: var(--text-light);
   text-shadow: 
-    0 0 4px #312314a1,
-    0 0 4px #312314a1,
-    0 0 4px #312314a1,
-    0 0 4px #312314a1;
+    0 0 4px rgba(211, 120, 67, 0.75),
+    0 0 4px rgba(211, 120, 67, 0.75),
+    0 0 4px rgba(211, 120, 67, 0.75),
+    0 0 4px rgba(211, 120, 67, 0.75);
 }
 
 .scroll-indicator {
@@ -266,7 +267,6 @@ header a:hover + .nav-divider,
 
 /* About Component */
 .about-card {
-  background: white;
   width: 50%;
   padding: 4rem;
   margin: 3rem auto;
@@ -288,6 +288,11 @@ header a:hover + .nav-divider,
   color: var(--text-medium-grey);
   text-align: center;
   margin-bottom: 3rem;
+  text-shadow: 
+    0 0 1px rgba(211, 120, 67, 0.75),
+    0 0 1px rgba(211, 120, 67, 0.75),
+    0 0 1px rgba(211, 120, 67, 0.75),
+    0 0 1px rgba(211, 120, 67, 0.75);
 }
 
 .portfolio-container {
