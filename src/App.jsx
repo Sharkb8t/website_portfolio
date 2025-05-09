@@ -52,7 +52,7 @@ const App = () => {
         title: "Credit Risk Analysis",
         description: "Utilized bank records to train and test a machine learning model to predict credit risk for future loan applicants.",
         url: "https://github.com/Sharkb8t/Credit_Risk_Analysis_MLM",
-        image: "",
+        image: "../Assets/images/credit-card.jpg",
         skills: ["Python", "Jupyter Notebook", "Tableu", "MLM"],
       },
       {
