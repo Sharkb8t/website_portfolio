@@ -63,12 +63,11 @@ const App = () => {
         skills: ["Python", "Jupyter Notebook", "Unsupervised Learning", "PCA", "K-Means"],
       },
       {
-        title: "GitHub Codespaces and github.dev",
-        description:
-          "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-        url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+        title: "Success Rate of Startups",
+        description: "Through data transformation and analysis, I was able to describe the success rate of startups based on their funding and industry type.",
+        url: "https://github.com/Sharkb8t/Crowdfunding_ETL",
         image: "",
-        skills: [],
+        skills: ["SQL", "Python", "Pandas", "Jupyter Notebook"],
       },
     ],
     socialLinks: {
