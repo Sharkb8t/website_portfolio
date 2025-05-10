@@ -330,6 +330,11 @@ header a:hover + .nav-divider,
 }
 
 /* Portfolio Components */
+#portfolio {
+  background-color: var(--primary-accent);
+  padding: var(--section-padding);
+}
+
 #portfolio h2 {
   font-family: var(--font-sans);
   font-size: 3rem;
@@ -408,6 +413,7 @@ header a:hover + .nav-divider,
 }
 
 .box {
+  background-color: white;
   width: 100%;
   border-radius: 10px;
   border: 2px solid var(--primary-accent);
