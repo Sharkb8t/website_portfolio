@@ -10,7 +10,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { projectImages } from "../Assets/images/images.js";
+import { projectImages } from "../Assets/images.js";
 
 /**
  * Desk image
