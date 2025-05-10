@@ -66,7 +66,7 @@ const App = () => {
         title: "Success Rate of Startups",
         description: "Through data transformation and analysis, I was able to describe the success rate of startups based on their funding and industry type.",
         url: "https://github.com/Sharkb8t/Crowdfunding_ETL",
-        image: "",
+        image: "start-up.jpg",
         skills: ["SQL", "Python", "Pandas", "Jupyter Notebook"],
       },
     ],
