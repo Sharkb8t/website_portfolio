@@ -45,21 +45,21 @@ const App = () => {
         title: "Heat Hypothesis: A Data Science Case Study",
         description: "Utilized New York City crime data to analyze the relationship between temperature and crime rates.",
         url: "https://github.com/Sharkb8t/Heat_Hypothesis_Case_Study_NY",
-        image: "../Assets/images/orange-thermostat.jpg",
+        image: "orange-thermostat.jpg",
         skills: ["JavaScript", "Python", "SQL", "Jupyter Notebook","Leaflet"],
       },
       {
         title: "Credit Risk Analysis",
         description: "Utilized bank records to train and test a machine learning model to predict credit risk for future loan applicants.",
         url: "https://github.com/Sharkb8t/Credit_Risk_Analysis_MLM",
-        image: "../Assets/images/credit-card.jpg",
+        image: "credit-card.jpg",
         skills: ["Python", "Jupyter Notebook", "Tableu", "MLM"],
       },
       {
         title: "Crypto Clustering: Is it a Good Investment?",
         description: "Utilized unsupervised machine learning techniques to analyze cryptocurrency market data. Using K-Means clustering, I grouped cryptocurrencies based on their 24-hour and 7-day price changes.",
         url: "https://github.com/Sharkb8t/CryptoClustering",
-        image: "../Assets/images/crypto-track.jpg",
+        image: "crypto-track.jpg",
         skills: ["Python", "Jupyter Notebook", "Unsupervised Learning", "PCA", "K-Means"],
       },
       {
@@ -67,6 +67,8 @@ const App = () => {
         description:
           "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
         url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+        image: "",
+        skills: [],
       },
     ],
     socialLinks: {
