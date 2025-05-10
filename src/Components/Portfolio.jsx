@@ -10,6 +10,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import { projectImages } from "../Assets/images/images.js";
 
 /**
  * Desk image
@@ -20,9 +21,6 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-
-import { projectImages } from "../Assets/images/images.js";
-
 import image from "../Assets/images/milkyway.jpg";
 
 const imageAltText = "Photography of the California Nebula - Steve Busch (Unsplash)";
@@ -53,10 +51,13 @@ const Portfolio = ({ projects }) => {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 {project.image && (
                   <img
-                    src={project.image}
+                    src={projectImages[project.image]}
                     alt={`${project.title} screenshot`}
                     loading="lazy"
                     className="project-thumbnail"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                    }}
                   />
                 )}
                 <h3>{project.title}</h3>
