@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "Dalton Schmidt - Data Scientist",
   "source": "src/index.html",
-  "homepage": "https://Sharkb8t.github.io/website_portfolio",
+  "homepage": "https://sharkb8t.github.io/website_portfolio",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://Sharkb8t.github.io/website_portfolio/'",
+    "build-gh": "parcel build --public-url 'https://sharkb8t.github.io/website_portfolio/'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sharkb8t/website_portfolio.git"
+    "url": "git+https://github.com/sharkb8t/website_portfolio.git"
   },
   "author": "Microsoft",
   "license": "ISC",
