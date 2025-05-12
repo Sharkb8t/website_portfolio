@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dalton A. Schmidt - Data Scientist",
   "source": "src/index.html",
-  "homepage": "http://Sharkb8t.github.io/website_portfolio",
+  "homepage": "https://Sharkb8t.github.io/website_portfolio",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
