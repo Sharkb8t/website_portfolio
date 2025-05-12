@@ -1,18 +1,19 @@
 {
   "name": "educator-js-codespace-template",
   "version": "1.0.0",
-  "description": "Dalton Schmidt - Data Scientist",
+  "description": "Dalton A. Schmidt - Data Scientist",
   "source": "src/index.html",
-  "homepage": "https://sharkb8t.github.io/website_portfolio",
+  "homepage": "https://Sharkb8t.github.io/website_portfolio",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url /website_portfolio/",
-    "predeploy": "npm run build",
+    "build": "parcel build",
+    "build-gh": "parcel build --public-url 'https://Sharkb8t.github.io/website_portfolio/'",
+    "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sharkb8t/website_portfolio.git"
+    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
   },
   "author": "Microsoft",
   "license": "ISC",
